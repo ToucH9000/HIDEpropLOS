@@ -4,7 +4,7 @@ Magisk module to work around Google's SafetyNet and Play Integrity attestation i
 
 ## Senzu Bean
 
-See [Details](Docs/Details.md) for more power.
+See [Details](Details.md) for more power.
 
 ## Still Confused?
 
