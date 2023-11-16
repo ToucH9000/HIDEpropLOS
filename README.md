@@ -2,7 +2,7 @@
 
 Magisk module to physical assault Play Integrity in LineageOS for POCO X3 Pro.
 
-## Senzu Bean
+## Bonus Stuff
 
 See [Details](Details.md) for more power.
 
