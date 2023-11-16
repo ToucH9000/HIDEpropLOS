@@ -1,6 +1,6 @@
 # PIFvayuLOS
 
-Magisk module to physical assault Play Integrity in LineageOS for POCO X3 Pro.
+Magisk module to fiz Play Integrity in LineageOS for POCO X3 Pro.
 
 ## Bonus Stuff
 
