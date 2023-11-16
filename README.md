@@ -1,6 +1,6 @@
 # PIFvayuLOS
 
-Magisk module to work around Google's SafetyNet and Play Integrity attestation in LineageOS for POCO X3 Pro.
+Magisk module to physical assault Play Integrity attestation in LineageOS for POCO X3 Pro.
 
 ## Senzu Bean
 
