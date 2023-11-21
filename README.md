@@ -2,8 +2,8 @@
 
 Magisk module to fix Play Integrity in LineageOS for POCO X3 Pro.
 
-✅ Device
-✅ Basic
+✅ Device<br>
+✅ Basic<br>
 ❌ Strong
 
 ## Bonus Stuff
