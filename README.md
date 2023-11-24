@@ -11,6 +11,6 @@ See [Details](Details.md) for more power.
 Check out my [Mobile Setup](https://github.com/ToucH9000/Mobile-Specification) to know what's happening. Whenever i find something usefull, i always update that repo.
 
 ## Credits
-[HuskyDG](https://github.com/HuskyDG)<br>
-[osm0sis](https://github.com/osm0sis)<br>
 [ez-me](https://github.com/ez-me)
+[osm0sis](https://github.com/osm0sis)<br>
+[HuskyDG](https://github.com/HuskyDG)<br>
