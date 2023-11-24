@@ -9,3 +9,8 @@ See [Details](Details.md) for more power.
 ## Still Confused?
 
 Check out my [Mobile Setup](https://github.com/ToucH9000/Mobile-Specification) to know what's happening. Whenever i find something usefull, i always update that repo.
+
+## Credits
+[HuskyDG](https://github.com/HuskyDG)
+[osm0sis](https://github.com/osm0sis)
+[ez-me](https://github.com/ez-me)
