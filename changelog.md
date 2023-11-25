@@ -1,3 +1,6 @@
-# v13.6
+# v13.7
 
-Bug fixes which i don't even know.
+## Highlights
+
+- Added custom resetprop
+- Removed pif.prop
