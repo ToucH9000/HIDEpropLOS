@@ -2,5 +2,5 @@
 
 ## Highlights
 
-- Added custom resetprop
-- Removed pif.prop
+- Added custom resetprop.
+- Removed custom props spoof.
