@@ -2,7 +2,11 @@
 
 RESETPROP="${0%/*}/resetprop"
 
-chmod 755 $RESETPROP
+if [ -e "$RESETPROP" ]; then
+	chmod 755 $RESETPROP
+else
+	RESETPROP="resetprop"
+fi
 
 check_resetprop() {
   local NAME=$1
@@ -25,6 +29,17 @@ maybe_set_prop() {
 maybe_set_prop ro.bootmode recovery unknown
 maybe_set_prop ro.boot.mode recovery unknown
 maybe_set_prop vendor.boot.mode recovery unknown
+
+# Hiding SELinux | Permissive status
+if [ -n "$(getprop ro.build.selinux)" ]; then
+	$RESETPROP --delete ro.build.selinux
+fi
+
+# Hiding SELinux | Use toybox to protect *stat* access time reading
+if [[ "$(toybox cat /sys/fs/selinux/enforce)" == "0" ]]; then
+    chmod 640 /sys/fs/selinux/enforce
+    chmod 440 /sys/fs/selinux/policy
+fi
 
 # Reset props after boot completed to avoid breaking some weird devices/ROMs...
 {
@@ -61,5 +76,4 @@ maybe_set_prop vendor.boot.mode recovery unknown
     # Other
     check_resetprop ro.build.type user
     check_resetprop ro.secure 1
-
 }&
