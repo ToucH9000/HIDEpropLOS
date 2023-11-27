@@ -5,8 +5,7 @@ fi
 
 # Check if safetynet-fix is installed
 if [ -d "/data/adb/modules/safetynet-fix" ]; then
-    rm -rf "/data/adb/modules/safetynet-fix"
-	rm -rf "/data/adb/SNFix.dex"
+    touch "/data/adb/modules/safetynet-fix/remove"
 fi
 
 MODDIR="${0%/*}"
