@@ -3,4 +3,4 @@
 ## Highlights
 
 - Added custom resetprop.
-- Removed custom props spoof.
+- Added custom props spoof.
