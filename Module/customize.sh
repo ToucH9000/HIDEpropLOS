@@ -5,11 +5,10 @@ fi
 
 # safetynet-fix module is incompatible
 if [ -d "/data/adb/modules/safetynet-fix" ]; then
-    ui_print "!!! safetynet-fix module removed!"
-    rm -rf "/data/adb/modules/safetynet-fix"
-	rm -rf "/data/adb/SNFix.dex"
+    touch "/data/adb/modules/safetynet-fix/remove"
+	ui_print "- 'safetynet-fix' module will be removed in next reboot."
 fi
 
-# use our resetprop
+# Use custom resetprop only in Android 10+
 mv -f "$MODPATH/bin/$ABI/resetprop" "$MODPATH"
 rm -rf "$MODPATH/bin"
