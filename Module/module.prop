@@ -1,7 +1,7 @@
 id=playintegrityfix
 name=PIFvayuLOS
-version=v13.8
-versionCode=138
+version=v13.9
+versionCode=139
 author=ToucH9000
 description=Universal Pain Killer For Google.
 updateJson=https://raw.githubusercontent.com/ToucH9000/PIFvayuLOS/main/Update.json
