@@ -1,6 +1,6 @@
-# v13.7
+# v13.9
 
 ## Highlights
 
 - Added custom resetprop.
-- Added custom props spoof.
+- Remove custom props spoof.
