@@ -1,5 +1,5 @@
 # PIFvayuLOS
-Magisk module to fix Play Integrity in LineageOS for POCO X3 Pro.
+Magisk module to fix Play Integrity in LineageOS for POCO X3 Pro. Google has made us all to fight with different fingerprints, as i will be using my own private build. I won't be able to know that my latest public build failing device integrity until you can inform me in "Issues" section. I will upstream custom spoof from [Chiteroman](https://github.com/chiteroman/PlayIntegrityFix)'s repo.
 
 ## Bonus Stuff
 See [Details](Details.md) for more power.
