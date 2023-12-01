@@ -2,5 +2,5 @@
 
 ## Highlights
 
-- Added custom resetprop of v13.8-BETA.
+- Added custom resetprop from v13.8-BETA.
 - Upstream custom prop spoof.
