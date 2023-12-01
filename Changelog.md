@@ -3,4 +3,4 @@
 ## Highlights
 
 - Added custom resetprop from v13.8-BETA.
-- Upstream custom prop spoof.
+- Added empty custom prop spoof template.
