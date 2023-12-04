@@ -4,7 +4,7 @@ Magisk module to fix Play Integrity in LineageOS for POCO X3 Pro. Before flashin
 ## Bonus Stuff
 See [Details](Details.md) for more power.<br><br>
 More about "pif.json"<br>
-For empty value you can write this line like this.<br>
+For default value (which is 23) you can write this line like this.<br>
 ```
 "FIRST_API_LEVEL": null
 ```
