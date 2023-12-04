@@ -1,6 +1,5 @@
 # PIFvayuLOS
-Magisk module to fix Play Integrity in LineageOS for POCO X3 Pro. Google has forced us all to fight with different fingerprints. This module is no longer working, you need to add prop values in "pif.json" to make it work and repack n flash, make sure that there's no "pif.json" exist in data/adb partion before flashing repacked module. If "pif.json" already exist in data/adb partion then there's no need of reflashing module just change "pif.json" values and then clear cache and data of "Google Play Store" and "Google Play Services". Good luck finding working fingerprint.<br><br>
-**PIFvayuLOS-v14-resetprop is in test phase**
+Magisk module to fix Play Integrity in LineageOS for POCO X3 Pro. Before flashing the module, if you want to use recommended "pif.json", you need to delete pif.json in data/adb partion otherwise module will use your custom made "pif.json".
 
 ## Bonus Stuff
 See [Details](Details.md) for more power.<br><br>
