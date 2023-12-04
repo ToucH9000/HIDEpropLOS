@@ -5,9 +5,8 @@ Magisk module to fix Play Integrity in LineageOS for POCO X3 Pro. Google has for
 See [Details](Details.md) for more power.<br><br>
 More about "pif.json"
 For empty value you can write this line like this.<br>
-'''
-"FIRST_API_LEVEL": null
-'''
+'''"FIRST_API_LEVEL": null'''
+
 ## Still Confused?
 Check out my [Mobile Setup](https://github.com/ToucH9000/Mobile-Specification) to know what's happening. Whenever i find something usefull, i always update that repo.
 
