@@ -1,6 +1,5 @@
-# v13.8
+# v14.1
 
 ## Highlights
 
-- Added custom resetprop from v13.8-BETA.
-- Added empty custom prop spoof template.
+- Upstreamed to official v14.1 (resetprop) version.
