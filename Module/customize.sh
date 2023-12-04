@@ -1,14 +1,14 @@
-# Error on < Android 8
-if [ "$API" -lt 26 ]; then
-    abort "!!! You can't use this module on Android < 8.0."
+# Check custom pif.json
+if [ -e /data/adb/pif.json ]; then
+    ui_print "!!! WARNING, You are using a custom pif.json. Module will use it."
+	ui_print "!!! If you want to use recommended one, delete pif.json in data/adb partition."
 fi
 
-# safetynet-fix module is incompatible
-if [ -d "/data/adb/modules/safetynet-fix" ]; then
-    touch "/data/adb/modules/safetynet-fix/remove"
-	ui_print "- 'safetynet-fix' module will be removed in next reboot."
-fi
+# curl & resetprop
+mv -f $MODPATH/bin/$ABI/curl $MODPATH
+mv -f $MODPATH/bin/$ABI/resetprop $MODPATH
 
-# Use custom resetprop only in Android 10+
-mv -f "$MODPATH/bin/$ABI/resetprop" "$MODPATH"
-rm -rf "$MODPATH/bin"
+rm -rf $MODPATH/bin
+
+set_perm $MODPATH/curl root root 777
+set_perm $MODPATH/resetprop root root 777

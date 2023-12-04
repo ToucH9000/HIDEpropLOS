@@ -1,5 +1,3 @@
-ro.debuggable=0
-
 # Props from ez-me
 ro.lineage.device=
 ro.lineage.version=
