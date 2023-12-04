@@ -4,7 +4,7 @@ Magisk module to fix Play Integrity in LineageOS for POCO X3 Pro. Before flashin
 ## Bonus Stuff
 See [Details](Details.md) for more power.<br><br>
 **More about ["pif.json"](https://github.com/juleast/GeneratePIF)**<br>
-If FIRST_API_LEVEL is greater than 32 it will force a hardware attestation. If the key FIRST_API_LEVEL in pif.json is null or empty, the module will set it to default value 23 (Android 6.0).<br>
+If FIRST_API_LEVEL is greater than 32 it will force a hardware attestation. If is is null or empty, the module will set it to default value 23 (Android 6.0).<br>
 ```
 "FIRST_API_LEVEL": null
 ```
