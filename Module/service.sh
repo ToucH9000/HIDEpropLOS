@@ -44,6 +44,9 @@ fi
         sleep 1
     done
 
+    # Prop from HuskyDG
+    resetprop_if_diff sys.oem_unlock_allowed 0
+
     # Avoid breaking Realme fingerprint scanners
     resetprop_if_diff ro.boot.flash.locked 1
 
