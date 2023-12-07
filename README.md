@@ -1,13 +1,8 @@
 # PIFvayuLOS
-Magisk module to fix Play Integrity in LineageOS for POCO X3 Pro. Before flashing the module, if you want to use recommended "pif.json", you need to delete "pif.json" in data/adb partion otherwise module will use your custom made "pif.json". If the fingerprint is banned by the google you just need to wait for the [dev](https://github.com/chiteroman) to update fingerprint, all you need to do is clear data and cache of "Google Play Store" and "Google Play Services".
+Magisk module to fix Play Integrity in LineageOS for POCO X3 Pro.
 
 ## Bonus Stuff
-See [Details](Details.md) for more power.<br><br>
-**More about ["pif.json"](https://github.com/juleast/GeneratePIF)**<br>
-If FIRST_API_LEVEL is greater than 32 it will force a hardware attestation. If it is null or empty, the module will set it to default value 23 (Android 6.0).<br>
-```
-"FIRST_API_LEVEL": null
-```
+See [Details](Details.md) for more power.
 
 ## Still Confused?
 Check out my [Mobile Setup](https://github.com/ToucH9000/Mobile-Specification) to know what's happening. Whenever i find something usefull, i always update that repo.
