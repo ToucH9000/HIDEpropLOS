@@ -2,4 +2,4 @@
 
 ## Highlights
 
-- Upstreamed to official v14.1 (resetprop) version.
+- Upstreamed to official v14.2
