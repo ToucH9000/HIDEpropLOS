@@ -78,5 +78,6 @@ fi
 
     # Other
     check_resetprop ro.build.type user
+    check_resetprop ro.debuggable 0
     check_resetprop ro.secure 1
 }&

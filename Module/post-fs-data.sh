@@ -1,3 +1,4 @@
+# LineageOS Hiding x2
 MODDIR="${0%/*}"
 MODNAME="${MODDIR##*/}"
 

@@ -1,12 +1,9 @@
-# Fix "debug environment" in momo
-ro.debuggable=0
-
-# Props from ez-me
+# LineageOS Hiding
 ro.lineage.device=
 ro.lineage.version=
+ro.lineagelegal.url=
 ro.lineage.releasetype=
 ro.lineage.build.version=
-ro.lineagelegal.url=
 ro.lineage.display.version=
-ro.lineage.build.version.plat.sdk=
 ro.lineage.build.version.plat.rev=
+ro.lineage.build.version.plat.sdk=
