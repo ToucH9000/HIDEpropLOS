@@ -1,6 +1,6 @@
-# v14.2
+# v14.2.1
 
 ## Highlights
 
-- Upstreamed to official v14.2
-- Added custom resetprop from v13.8-BETA
+- Minor Changes.
+- Don't use Momo. ("Debug Environment" is false positive)
