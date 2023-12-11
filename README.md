@@ -1,5 +1,5 @@
 # PIFvayuLOS
-Magisk module to fix Play Integrity in LineageOS for POCO X3 Pro.
+Magisk module to fix Play Integrity in LineageOS for POCO X3 Pro. Seems like google isn't giving up, I don't use such apps which require "Device Integrity". If i ever need that, i will be switching to "xiaomi.eu" permanently.
 
 ## Bonus Stuff
 See [Details](Details.md) for more power.
