@@ -36,14 +36,14 @@ if [ -n "$(getprop ro.build.selinux)" ]; then
 fi
 
 # Hiding SELinux | Use toybox to protect *stat* access time reading
-if [[ "$(toybox cat /sys/fs/selinux/enforce)" == "0" ]]; then
+if [ "$(toybox cat /sys/fs/selinux/enforce)" == "0" ]; then
     chmod 640 /sys/fs/selinux/enforce
     chmod 440 /sys/fs/selinux/policy
 fi
 
 # Reset props after boot completed to avoid breaking some weird devices/ROMs...
 {
-    until [[ "$(getprop sys.boot_completed)" == "1" ]]; do
+    until [[ "$(resetprop sys.boot_completed)" == "1" ]]; do
         sleep 1
     done
 
@@ -61,23 +61,6 @@ fi
 
     # SafetyNet/Play Integrity | Avoid breaking OnePlus display modes/fingerprint scanners on OOS 12
     check_resetprop ro.boot.verifiedbootstate green
-    check_resetprop ro.boot.veritymode enforcing
+    check_resetprop pro.boot.veritymode enforcing
     check_resetprop vendor.boot.vbmeta.device_state locked
-
-    # RootBeer, Microsoft
-    check_resetprop ro.build.tags release-keys
-
-    # Samsung
-    check_resetprop ro.boot.warranty_bit 0
-    check_resetprop ro.vendor.boot.warranty_bit 0
-    check_resetprop ro.vendor.warranty_bit 0
-    check_resetprop ro.warranty_bit 0
-
-    # OnePlus
-    check_resetprop ro.is_ever_orange 0
-
-    # Other
-    check_resetprop ro.build.type user
-    check_resetprop ro.debuggable 0
-    check_resetprop ro.secure 1
 }&
