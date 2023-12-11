@@ -2,5 +2,4 @@
 
 ## Highlights
 
-- Minor Changes.
-- Don't use Momo. ("Debug Environment" is false positive)
+- Upstreamed to official v14.2.1
