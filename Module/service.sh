@@ -61,6 +61,6 @@ fi
 
     # SafetyNet/Play Integrity | Avoid breaking OnePlus display modes/fingerprint scanners on OOS 12
     check_resetprop ro.boot.verifiedbootstate green
-    check_resetprop pro.boot.veritymode enforcing
+    check_resetprop ro.boot.veritymode enforcing
     check_resetprop vendor.boot.vbmeta.device_state locked
 }&
