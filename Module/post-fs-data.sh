@@ -28,7 +28,7 @@ resetprop_if_diff ro.build.type user
 # Other
 resetprop_if_diff ro.debuggable 0
 resetprop_if_diff ro.secure 1
-for prefix in system bootimage vendor system_ext product oem odm vendor_dlkm; do
+for prefix in bootimage odm product system system_ext vendor vendor_dlkm; do
     check_resetprop ro.${prefix}.build.type user
 done
 
