@@ -1,5 +1,5 @@
-# PIFvayuLOS (Deprecated)
-Magisk module to fix Play Integrity in LineageOS for POCO X3 Pro.
+# HIDErootLOS (Vayu)
+Hide root checks in LineageOS for POCO X3 Pro.
 
 ## Bonus Stuff
 See [Details](Details.md) for more power.
