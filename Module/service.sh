@@ -17,9 +17,7 @@ resetprop_if_match() {
 }
 
 # Magisk recovery mode
-resetprop_if_match ro.bootmode recovery unknown
 resetprop_if_match ro.boot.mode recovery unknown
-resetprop_if_match vendor.boot.mode recovery unknown
 
 # SELinux
 if [ -n "$(resetprop ro.build.selinux)" ]; then
@@ -39,18 +37,9 @@ fi
         sleep 1
     done
 
-    # avoid breaking Realme fingerprint scanners
-    resetprop_if_diff ro.boot.flash.locked 1
-    resetprop_if_diff ro.boot.realme.lockstate 1
-
-    # avoid breaking Oppo fingerprint scanners
-    resetprop_if_diff ro.boot.vbmeta.device_state locked
-
-    # avoid breaking OnePlus display modes/fingerprint scanners
-    resetprop_if_diff vendor.boot.verifiedbootstate green
+    # make banking apps happy
+    resetprop_if_diff sys.oem_unlock_allowed 0
 
     # avoid breaking OnePlus/Oppo display fingerprint scanners on OOS/ColorOS 12+
     resetprop_if_diff ro.boot.verifiedbootstate green
-    resetprop_if_diff ro.boot.veritymode enforcing
-    resetprop_if_diff vendor.boot.vbmeta.device_state locked
 }&

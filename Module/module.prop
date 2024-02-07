@@ -1,7 +1,7 @@
 id=hide-root-los
 name=HIDErootLOS
-version=v15.5
-versionCode=150500
+version=v15.5.1
+versionCode=150501
 author=ToucH9000
 description=Hide Root Checks In LineageOS.
 updateJson=https://raw.githubusercontent.com/ToucH9000/HIDErootLOS/main/Update.json

@@ -1,3 +1,8 @@
+check_resetprop(){
+    local VALUE="$(resetprop -v "$1")"
+    [ ! -z "$VALUE" ] && [ "$VALUE" != "$2" ] && resetprop -v -n "$1" "$2"
+}
+
 replace_value_resetprop(){
     local VALUE="$(resetprop -v "$1")"
     [ -z "$VALUE" ] && return

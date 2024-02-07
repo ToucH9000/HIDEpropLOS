@@ -23,26 +23,15 @@ resetprop_if_match() {
 
 # RootBeer, Microsoft
 resetprop_if_diff ro.build.tags release-keys
-
-# Samsung
-resetprop_if_diff ro.boot.warranty_bit 0
-resetprop_if_diff ro.vendor.boot.warranty_bit 0
-resetprop_if_diff ro.vendor.warranty_bit 0
-resetprop_if_diff ro.warranty_bit 0
-
-# Xiaomi
-resetprop_if_diff ro.secureboot.lockstate locked
-
-# Realme
-resetprop_if_diff ro.boot.realmebootstate green
-
-# OnePlus
-resetprop_if_diff ro.is_ever_orange 0
+resetprop_if_diff ro.build.type user
 
 # Other
-resetprop_if_diff ro.build.type user
 resetprop_if_diff ro.debuggable 0
 resetprop_if_diff ro.secure 1
+
+for prefix in system bootimage vendor system_ext product oem odm vendor_dlkm odm_dlkm; do
+    check_resetprop ro.${prefix}.build.type user
+done
 
 # Lineage
 resetprop_if_diff ro.build.flavor vayu-user
