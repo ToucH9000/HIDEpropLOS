@@ -17,7 +17,9 @@ resetprop_if_match() {
 }
 
 # Magisk recovery mode
+resetprop_if_match ro.bootmode recovery unknown
 resetprop_if_match ro.boot.mode recovery unknown
+resetprop_if_match vendor.boot.mode recovery unknown
 
 # SELinux
 if [ -n "$(resetprop ro.build.selinux)" ]; then
@@ -30,16 +32,25 @@ if [ "$(toybox cat /sys/fs/selinux/enforce)" == "0" ]; then
     chmod 440 /sys/fs/selinux/policy
 fi
 
-# SafetyNet/Play Integrity
-{
-    # must be set after boot_completed for various OEMs
-    until [ "$(getprop sys.boot_completed)" == "1" ]; do
-        sleep 1
-    done
+# must be set after boot_completed for various OEMs
+until [ "$(getprop sys.boot_completed)" == "1" ]; do
+    sleep 1
+done
 
-    # make banking apps happy
-    resetprop_if_diff sys.oem_unlock_allowed 0
+# RootBeer, Microsoft
+resetprop_if_diff ro.build.tags release-keys
+resetprop_if_diff ro.build.type user
+resetprop_if_diff ro.product.name vayu
 
-    # avoid breaking OnePlus/Oppo display fingerprint scanners on OOS/ColorOS 12+
-    resetprop_if_diff ro.boot.verifiedbootstate green
-}&
+# Other
+resetprop_if_diff ro.debuggable 0
+resetprop_if_diff ro.secure 1
+
+# Lineage
+resetprop_if_diff ro.build.flavor vayu-user
+
+# make banking apps happy
+resetprop_if_diff sys.oem_unlock_allowed 0
+
+# avoid breaking OnePlus/Oppo display fingerprint scanners on OOS/ColorOS 12+
+resetprop_if_diff ro.boot.verifiedbootstate green
