@@ -2,4 +2,4 @@
 
 ## Highlights
 
-- Upstreamed to official v15.5
+- Upstreamed to 15.7
