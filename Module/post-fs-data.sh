@@ -40,6 +40,7 @@ resetprop_if_diff ro.boot.realmebootstate green
 resetprop_if_diff ro.is_ever_orange 0
 
 # Other
+resetprop_if_diff ro.build.user android-build
 resetprop_if_diff ro.build.type user
 resetprop_if_diff ro.debuggable 0
 resetprop_if_diff ro.secure 1
