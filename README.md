@@ -1,5 +1,5 @@
-# HIDErootLOS (Vayu)
-Hide root checks in LineageOS for POCO X3 Pro.
+# HIDEpropLOS (vayu)
+Hide sensitive properties from detection apps in LineageOS for POCO X3 Pro. For more hiding see [here](https://github.com/ToucH9000/Mobile-Setup/blob/main/Files/build.prop).
 
 ## Bonus Stuff
 See [Details](Details.md) for more power.
