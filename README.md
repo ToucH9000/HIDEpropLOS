@@ -1,5 +1,5 @@
 # HIDEpropLOS (vayu)
-Hide some sensitive properties from detection apps in LineageOS for POCO X3 Pro. For more hiding see [here](https://github.com/ToucH9000/Mobile-Setup/blob/main/Files/build.prop). If you want to test for other device, you need to replace "vayu" with your device codename in "module.prop" and "post-fs-data.sh".
+Hide some sensitive properties from detection apps in LineageOS for POCO X3 Pro. If you want to test for other device, you need to replace "vayu" with your device codename in "module.prop" and "post-fs-data.sh". For more hiding see [here](https://github.com/ToucH9000/Mobile-Setup/blob/main/Files/build.prop).
 
 ## Bonus Stuff
 See [Details](Details.md) for more power.
