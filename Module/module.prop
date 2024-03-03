@@ -1,0 +1,7 @@
+id=hide-prop-los
+name=HIDEpropLOS (vayu)
+version=v15.9.3
+versionCode=150903
+author=ToucH9000
+description=Hide some "lineage" properties from detection apps.
+updateJson=https://raw.githubusercontent.com/ToucH9000/HIDEpropLOS/main/Update.json
